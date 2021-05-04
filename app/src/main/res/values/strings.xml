@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Mi projecto mas grande</string>
+    <string name="formulario">Formulario</string>
+    <string name="projecto">Projecto</string>
+    <string name="introducir_nombre">Nombre</string>
+    <string name="introducir_edad">Edad</string>
+    <string name="validar">Validar Datos</string>
+    <string name="introducir_pelicula_favorita">Pelicula Favorita</string>
+    <string name="introducir_nacimiento">Fecha De Nacimiento</string>
+    <string name="tu_nombre_es">Tu Nombre Es:</string>
+    <string name="ingresa_tus_datos">Ingresa Tus Datos</string>
+    <string name="verifica_tus_datos">Verifica Tus Datos</string>
+    <string name="tu_edad_es">Tu Edad Es</string>
+    <string name="piojos">¿Tienes Piojos?</string>
+    <string name="tu_pelicula_favorita_es">Tu Pelicula Favorita Es:</string>
+    <string name="tu_fecha_de_nacimiento_es">Tu Fecha De Nacimiento Es</string>
+    <string name="traga_perras">Maquina Traga Perras</string>
+    <string name="premios">Premios</string>
+    <string name="traga_perrear">Girar</string>
+    <string name="ganaste">Ganaste Mira Los Premios :p</string>
+    <string name="perdiste">Perdiste</string>
+    <string name="monedas">Monedas X</string>
+    <string name="contador">0</string>
+    <string name="premio">X300</string>
+
+</resources>

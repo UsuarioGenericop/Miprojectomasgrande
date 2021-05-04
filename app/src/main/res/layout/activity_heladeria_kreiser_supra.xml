@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HeladeriaKreiserSupra">
+
+    <ImageView
+        android:id="@+id/androi"
+        android:layout_width="303dp"
+        android:layout_height="293dp"
+        android:layout_margin="30dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/androi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titulazo"
+        android:layout_width="271dp"
+        android:layout_height="134dp"
+        android:layout_margin="30dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/projecto"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/teal_200"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/androi" />
+
+    <TextView
+        android:id="@+id/titulazo2"
+        android:layout_width="271dp"
+        android:layout_height="134dp"
+        android:layout_margin="30dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/projecto"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/teal_200"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulazo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

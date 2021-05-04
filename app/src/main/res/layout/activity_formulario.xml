@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".FORMULARIO.Formulario">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/ingresa_tus_datos"
+            android:textColor="@color/teal_200"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="70dp"
+            android:background="#CCCFD1"
+            android:fontFamily="cursive"
+            android:hint="@string/introducir_nombre"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/etEdad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="70dp"
+            android:background="#CCCFD1 "
+            android:fontFamily="cursive"
+            android:hint="@string/introducir_edad"
+            android:inputType="number"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNacimiento" />
+
+        <EditText
+            android:id="@+id/etPeliculaFavorita"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="70dp"
+            android:background="#CCCFD1 "
+            android:fontFamily="cursive"
+            android:hint="@string/introducir_pelicula_favorita"
+            android:inputType="text"
+            android:maxLength="40"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEdad" />
+
+        <EditText
+            android:id="@+id/etNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="70dp"
+            android:background="#CCCFD1"
+            android:fontFamily="cursive"
+            android:hint="@string/introducir_nacimiento"
+            android:inputType="date"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btValidar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/teal_200"
+            android:fontFamily="cursive"
+            android:text="@string/validar"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPeliculaFavorita" />
+
+        <CheckBox
+            android:id="@+id/cbPiojos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#CCCFD1"
+            android:fontFamily="cursive"
+            android:text="@string/piojos"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPeliculaFavorita" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

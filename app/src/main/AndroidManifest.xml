@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.miprojectomasgrande">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icone_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MiProjectoMasGrande">
+        <activity android:name=".start.Inicio"/>
+        <activity android:name=".ruleta.PremiosActivity" />
+        <activity android:name=".ruleta.TragaPerrasActivity" />
+        <activity android:name=".examples.Datos" />
+        <activity android:name=".FORMULARIO.Formulario" />
+        <activity android:name=".HeladeriaKreiserSupra"
+            android:theme="@style/Theme.MiProjectoMasGrande.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

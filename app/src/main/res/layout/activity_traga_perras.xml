@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".ruleta.TragaPerrasActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/ivMoneda"
+            android:layout_width="65dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/moneda"
+            app:layout_constraintEnd_toStartOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="185dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/monedas"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintStart_toEndOf="@+id/ivMoneda"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvContador"
+            android:layout_width="108dp"
+            android:layout_height="52dp"
+
+            android:layout_marginStart="192dp"
+            android:layout_marginLeft="192dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/contador"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintStart_toEndOf="@+id/ivMoneda"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/traga_perras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/teal_200"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivMoneda" />
+
+        <ImageView
+            android:id="@+id/ivImagen2"
+            android:layout_width="131dp"
+            android:layout_height="206dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/lemon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/ivImagen3"
+            android:layout_width="127dp"
+            android:layout_height="203dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/diamond"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btMoneda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            android:fontFamily="cursive"
+            android:text="@string/monedas"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivImagen2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btPremios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="cursive"
+            android:text="@string/premios"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btTragaPerrear" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btTragaPerrear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="cursive"
+            android:text="@string/traga_perrear"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btMoneda" />
+
+        <TextView
+            android:id="@+id/tvGanaste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/ganaste"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/teal_200"
+            android:textSize="50sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btPremios"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvPerdiste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/perdiste"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/teal_200"
+            android:textSize="50sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvGanaste"
+            app:layout_constraintVertical_bias="0.0"
+            tools:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/ivImagen1"
+            android:layout_width="117dp"
+            android:layout_height="207dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/cherry"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/traga_perras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.157"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPerdiste" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
