@@ -38,14 +38,14 @@
         android:layout_width="271dp"
         android:layout_height="134dp"
         android:layout_margin="30dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="cursive"
         android:gravity="center"
-        android:text="@string/projecto"
+        android:text="@string/omegalul"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/teal_200"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.385"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulazo" />
 
