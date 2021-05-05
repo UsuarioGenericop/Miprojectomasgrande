@@ -10,16 +10,16 @@ class Datos : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_datos)
 
-        val tvTuNombre : TextView = findViewById(R.id.tvTuNombre)
+        val tvTuNombre: TextView = findViewById(R.id.tvTuNombre)
         tvTuNombre.text = intent.getStringExtra("nombre")
-        val tvTuEdad : TextView = findViewById(R.id.tvTuEdad)
-        tvTuEdad.text = intent.getIntExtra("edad",0).toString()
-        val tvPeliculaFavorita : TextView = findViewById(R.id.tvPeliculaFavorita)
+        val tvTuEdad: TextView = findViewById(R.id.tvTuEdad)
+        tvTuEdad.text = intent.getIntExtra("edad", 0).toString()
+        val tvPeliculaFavorita: TextView = findViewById(R.id.tvPeliculaFavorita)
         tvPeliculaFavorita.text = intent.getStringExtra("peliculaFavorita")
-        val tvPiojos : TextView = findViewById(R.id.tvPiojos)
-        tvPiojos.text = intent.getBooleanExtra("piojos",false).toString()
-        val tvNacimiento : TextView = findViewById(R.id.tvNacimiento)
-        tvNacimiento.text = intent.getIntExtra("nacimiento",0).toString()
+        val tvPiojos: TextView = findViewById(R.id.tvPiojos)
+        tvPiojos.text = intent.getBooleanExtra("piojos", false).toString()
+        val tvNacimiento: TextView = findViewById(R.id.tvNacimiento)
+        tvNacimiento.text = intent.getIntExtra("nacimiento", 0).toString()
 
 
     }

@@ -1,6 +1,6 @@
 package com.example.miprojectomasgrande.examples
 
-fun main(){
+fun main() {
     val formula1: FranchescoVirgolini =
         FranchescoVirgolini()
     formula1.aleron = 0
@@ -12,20 +12,6 @@ fun main(){
     formula1.meterLenitro()
     formula1.prendeLaMoto()
     formula1.alerocionar()
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

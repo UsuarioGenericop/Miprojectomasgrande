@@ -14,16 +14,19 @@ import com.example.miprojectomasgrande.start.Inicio
 
 
 class HeladeriaKreiserSupra : AppCompatActivity() {
-    lateinit var imagen : ImageView
-    lateinit var titulazo : TextView
-    lateinit var titulazo2 : TextView
-    lateinit var topAnim : Animation
-    lateinit var botAnim : Animation
+    lateinit var imagen: ImageView
+    lateinit var titulazo: TextView
+    lateinit var titulazo2: TextView
+    lateinit var topAnim: Animation
+    lateinit var botAnim: Animation
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
-        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        );
         setContentView(R.layout.activity_heladeria_kreiser_supra)
         imagen = findViewById(R.id.androi)
         titulazo = findViewById(R.id.titulazo)
@@ -36,12 +39,12 @@ class HeladeriaKreiserSupra : AppCompatActivity() {
     }
 
 
-
-    private fun loadAnimation(){
+    private fun loadAnimation() {
         imagen.animation = topAnim
         titulazo.animation = botAnim
         titulazo2.animation = botAnim
     }
+
     private fun loadMainScreen() {
         Handler().postDelayed(Runnable {
             startActivity(Intent(this, Inicio::class.java))

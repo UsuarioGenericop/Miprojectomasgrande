@@ -7,10 +7,4 @@ class Animal {
     var lindura: Boolean = true
 
 
-
-
-
-
-
-
 }
