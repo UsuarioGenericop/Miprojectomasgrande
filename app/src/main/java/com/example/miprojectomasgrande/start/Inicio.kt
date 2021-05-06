@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.example.miprojectomasgrande.R
 import com.example.miprojectomasgrande.FORMULARIO.Formulario
+import com.example.miprojectomasgrande.servicio.LlamarServicioActivity
 import com.example.miprojectomasgrande.ruleta.TragaPerrasActivity
 
 class Inicio : AppCompatActivity() {
@@ -14,6 +15,7 @@ class Inicio : AppCompatActivity() {
         setContentView(R.layout.activity_inicio)
         val formulario: Button = findViewById(R.id.btFormulario)
         val tragaPerras: Button = findViewById(R.id.btTragaPerras)
+        var servicio: Button = findViewById(R.id.btServicio)
 
         formulario.setOnClickListener {
             val intent = Intent(this, Formulario::class.java)
@@ -21,6 +23,10 @@ class Inicio : AppCompatActivity() {
         }
         tragaPerras.setOnClickListener {
             val intent = Intent(this, TragaPerrasActivity::class.java)
+            startActivity(intent)
+        }
+        servicio.setOnClickListener {
+            val intent = Intent(this, LlamarServicioActivity::class.java)
             startActivity(intent)
         }
     }
