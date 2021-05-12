@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".servicio.Error">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivlatam2"
+            android:layout_width="392dp"
+            android:layout_height="317dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/latam2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.777"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/deprimido"
+            android:layout_width="293dp"
+            android:layout_height="211dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/deprimido"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivlatam2" />
+
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="393dp"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+
+            android:text="@string/referencia"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deprimido" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
