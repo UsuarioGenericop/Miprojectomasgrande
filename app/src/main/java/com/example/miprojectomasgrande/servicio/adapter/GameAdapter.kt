@@ -36,7 +36,7 @@ class GameAdapter(val context: Context?, data: List<DogamiGameResult>) :
 
     class ViewHolder(itemView: View) :
         RecyclerView.ViewHolder(itemView) {
-        var gameImage: ImageView = itemView.findViewById(R.id.ivCereza)
-        var gameValue: TextView = itemView.findViewById(R.id.tvCereza)
+        var gameImage: ImageView = itemView.findViewById(R.id.ivGame)
+        var gameValue: TextView = itemView.findViewById(R.id.tvGame)
     }
 }

@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiClient {
 
-    private const val BASE_URL: String = "https://api.steinhq.com/v1/storages/5ea8ca0783c30d0425e2c28b/"
+    private const val BASE_URL: String = "https://api.sheety.co/7076e9a28c893ed766799a01c5067807/games/"
 
     private val gson : Gson by lazy {
         GsonBuilder().setLenient().create()
