@@ -3,7 +3,9 @@ package com.example.miprojectomasgrande.servicio
 import GameAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Adapter
+import android.widget.ScrollView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
@@ -20,11 +22,13 @@ import retrofit2.Response
 class LlamarServicioActivity : AppCompatActivity() {
     lateinit var gamesRecyclerView: RecyclerView
     lateinit var adapter : GameAdapter
+    lateinit var errorView : ScrollView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_llamar_servicio)
         gamesRecyclerView = findViewById(R.id.rbGames)
+        errorView = findViewById(R.id.errorView)
         gamesRecyclerView.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
         val decoration = SpacesItemDecoration(50)
         gamesRecyclerView.addItemDecoration(decoration)
@@ -37,7 +41,7 @@ class LlamarServicioActivity : AppCompatActivity() {
                 Callback<Games> {
 
                 override fun onFailure(call: Call<Games>, t: Throwable) {
-                    TODO("Not yet implemented")
+                    showErrorView()
                 }
 
                 override fun onResponse(call: Call<Games>, response: Response<Games>) {
@@ -56,5 +60,11 @@ class LlamarServicioActivity : AppCompatActivity() {
             adapter = GameAdapter(this@LlamarServicioActivity, this.toMutableList())
             gamesRecyclerView.adapter = adapter
         }
+        gamesRecyclerView.visibility = View.VISIBLE
+        errorView.visibility = View.GONE
+    }
+    private fun showErrorView(){
+        gamesRecyclerView.visibility = View.GONE
+        errorView.visibility = View.VISIBLE
     }
 }
