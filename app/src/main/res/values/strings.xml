@@ -26,5 +26,9 @@
     <string name="servicio">Pedir Un Servicio</string>
     <string name="referencia">Tu Entiendes La Referencia</string>
     <string name="gameDetail">Detalle De El Juego</string>
+    <string name="Jugadores">Cantidad De Jugadores</string>
+    <string name="Partida">Duracion De Partida</string>
+    <string name="Dificultad">Dificultad</string>
+    <string name="NombreGame">Nombre de el juego</string>
 
 </resources>

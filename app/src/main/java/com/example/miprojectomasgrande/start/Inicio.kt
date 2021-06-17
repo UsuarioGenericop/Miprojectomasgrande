@@ -9,6 +9,7 @@ import com.example.miprojectomasgrande.FORMULARIO.Formulario
 import com.example.miprojectomasgrande.servicio.LlamarServicioActivity
 import com.example.miprojectomasgrande.ruleta.TragaPerrasActivity
 
+
 class Inicio : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,9 +31,4 @@ class Inicio : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
-
 }
-
-
-

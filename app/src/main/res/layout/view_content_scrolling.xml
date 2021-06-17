@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".servicio.gamedetail.GameDetailActivity">
+
+        <TextView
+            android:id="@+id/tvJugadores"
+            android:layout_width="287dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="49dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/Jugadores"
+            android:textColor="@color/teal_200"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.129"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvJugadores2"
+            android:layout_width="320dp"
+            android:layout_height="32dp"
+            android:layout_margin="10dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.185"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvJugadores"
+            tools:text="example text" />
+
+        <TextView
+            android:id="@+id/tvPartida"
+            android:layout_width="287dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/Partida"
+            android:textColor="@color/teal_200"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.129"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvJugadores2" />
+
+        <TextView
+            android:id="@+id/tvPartida2"
+            android:layout_width="320dp"
+            android:layout_height="32dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.175"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPartida"
+            tools:text="example text" />
+
+        <TextView
+            android:id="@+id/tvDificultad"
+            android:layout_width="287dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/Dificultad"
+            android:textColor="@color/teal_200"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.129"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPartida2" />
+
+        <TextView
+            android:id="@+id/tvDificultad2"
+            android:layout_width="320dp"
+            android:layout_height="32dp"
+            android:layout_margin="10dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.175"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDificultad"
+            tools:text="example text" />
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="287dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/NombreGame"
+            android:textColor="@color/teal_200"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.129"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDificultad2" />
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="320dp"
+            android:layout_height="32dp"
+            android:layout_margin="10dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.175"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+            tools:text="example text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
