@@ -14,8 +14,8 @@
 
         <TextView
             android:id="@+id/tvJugadores"
-            android:layout_width="355dp"
-            android:layout_height="61dp"
+            android:layout_width="360dp"
+            android:layout_height="65dp"
             android:layout_margin="10dp"
             android:layout_marginTop="49dp"
             android:fontFamily="cursive"
@@ -30,8 +30,8 @@
 
         <TextView
             android:id="@+id/tvJugadores2"
-            android:layout_width="354dp"
-            android:layout_height="54dp"
+            android:layout_width="358dp"
+            android:layout_height="59dp"
             android:layout_margin="10dp"
             android:fontFamily="cursive"
             android:gravity="center"
@@ -74,8 +74,8 @@
 
         <TextView
             android:id="@+id/tvDificultad"
-            android:layout_width="368dp"
-            android:layout_height="49dp"
+            android:layout_width="364dp"
+            android:layout_height="57dp"
             android:layout_margin="10dp"
             android:fontFamily="cursive"
             android:gravity="center"
@@ -89,8 +89,8 @@
 
         <TextView
             android:id="@+id/tvDificultad2"
-            android:layout_width="375dp"
-            android:layout_height="48dp"
+            android:layout_width="363dp"
+            android:layout_height="62dp"
             android:layout_margin="10dp"
             android:fontFamily="cursive"
             android:gravity="center"
@@ -103,8 +103,8 @@
 
         <TextView
             android:id="@+id/tvTitulo"
-            android:layout_width="380dp"
-            android:layout_height="88dp"
+            android:layout_width="364dp"
+            android:layout_height="90dp"
             android:layout_margin="10dp"
             android:fontFamily="cursive"
             android:gravity="center"
@@ -118,8 +118,8 @@
 
         <TextView
             android:id="@+id/tvDescripcion"
-            android:layout_width="392dp"
-            android:layout_height="269dp"
+            android:layout_width="363dp"
+            android:layout_height="265dp"
             android:layout_margin="10dp"
             android:fontFamily="cursive"
             android:gravity="center"
