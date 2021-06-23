@@ -6,11 +6,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.miprojectomasgrande.servicio.GameClickListener
 import com.example.miprojectomasgrande.R
 import com.example.miprojectomasgrande.servicio.data.DogamiGameResult
 
 
-class GameAdapter(val context: Context?, data: List<DogamiGameResult>) :
+class GameAdapter(val context: Context?, data: List<DogamiGameResult>,private val listener: GameClickListener) :
     RecyclerView.Adapter<GameAdapter.ViewHolder>() {
 
     private val itemsList: List<DogamiGameResult> = data
@@ -28,6 +29,9 @@ class GameAdapter(val context: Context?, data: List<DogamiGameResult>) :
             .centerCrop()
             .into(holder.gameImage)
         holder.gameValue.text = game.name
+        holder.itemView.setOnClickListener {
+            listener.onGameClicked(game)
+        }
     }
 
     override fun getItemCount(): Int {

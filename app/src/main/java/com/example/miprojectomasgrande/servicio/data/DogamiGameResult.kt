@@ -1,7 +1,11 @@
 package com.example.miprojectomasgrande.servicio.data
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
 data class Games(val games: List<DogamiGameResult>)
 
+@Parcelize
 data class DogamiGameResult(
     val id: Int,
     val name: String,
@@ -14,4 +18,4 @@ data class DogamiGameResult(
     val imageUrl: String,
     val posterUrl: String,
     val favorite: Boolean
-)
+) : Parcelable
