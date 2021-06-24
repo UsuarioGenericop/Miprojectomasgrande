@@ -17,7 +17,7 @@ class GameDetailActivity : AppCompatActivity() {
     lateinit var complexityTextView: TextView
     lateinit var descriptionTextView: TextView
     lateinit var posterImageView: ImageView
-    lateinit var titleTextView2: Toolbar
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,9 +29,7 @@ class GameDetailActivity : AppCompatActivity() {
 
         titleTextView = findViewById(R.id.tvTitulo)
         titleTextView.text = game.name
-        titleTextView2 = findViewById(R.id.gameDetailToolbar)
-        //titleTextView2.setTitle(game.name)
-        //timeTextView = findViewById(R.id.tvPartida2)
+        timeTextView = findViewById(R.id.tvPartida2)
         timeTextView.text = game.time
         minPlayersTextView = findViewById(R.id.tvJugadores2)
         minPlayersTextView.text = "${game.minPlayers}-${game.maxPlayers}"
