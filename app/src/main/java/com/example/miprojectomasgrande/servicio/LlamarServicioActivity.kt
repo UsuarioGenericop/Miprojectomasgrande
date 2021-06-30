@@ -1,25 +1,25 @@
 package com.example.miprojectomasgrande.servicio
 
 import GameAdapter
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Adapter
 import android.widget.ScrollView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.miprojectomasgrande.R
 import com.example.miprojectomasgrande.servicio.data.ApiClient
 import com.example.miprojectomasgrande.servicio.data.DogamiGameResult
 import com.example.miprojectomasgrande.servicio.data.Games
+import com.example.miprojectomasgrande.servicio.gamedetail.GameDetailActivity
 import com.margge.dogami.presentation.utils.SpacesItemDecoration
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 
-class LlamarServicioActivity : AppCompatActivity() {
+class LlamarServicioActivity : AppCompatActivity(), GameClickListener {
     lateinit var gamesRecyclerView: RecyclerView
     lateinit var adapter : GameAdapter
     lateinit var errorView : ScrollView
@@ -55,9 +55,12 @@ class LlamarServicioActivity : AppCompatActivity() {
             })
         }).start()
     }
+    private fun  goToGameDetailActivity() {
+
+    }
     private fun showGames(list: List<DogamiGameResult>?) {
         list?.run {
-            adapter = GameAdapter(this@LlamarServicioActivity, this.toMutableList())
+            adapter = GameAdapter(this@LlamarServicioActivity, this.toMutableList(),this@LlamarServicioActivity)
             gamesRecyclerView.adapter = adapter
         }
         gamesRecyclerView.visibility = View.VISIBLE
@@ -66,5 +69,11 @@ class LlamarServicioActivity : AppCompatActivity() {
     private fun showErrorView(){
         gamesRecyclerView.visibility = View.GONE
         errorView.visibility = View.VISIBLE
+    }
+
+    override fun onGameClicked(dogamiGameResult: DogamiGameResult) {
+        val inte = Intent(this, GameDetailActivity::class.java)
+        inte.putExtra("game", dogamiGameResult)
+        startActivity(inte)
     }
 }
